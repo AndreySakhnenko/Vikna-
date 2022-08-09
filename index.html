@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Vikna+</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header__inner">
+            <div class="header__head">
+                <div class="header__logo">
+                    <a class="header__logo-link" href="#">
+                        <img class="header__logo-img" src="image/Logo/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header__lang">
+                    <a class="header__lang-link" href="#">EN</a>
+                    <ul class="header__lang-list">
+                        <li class="header__lang-item">
+                            <a class="header__lang-link" href="#">UA</a>
+                        </li>
+                        <li class="header__lang-item">
+                            <a class="header__lang-link" href="#">Pl</a>
+                        </li>
+                        <li class="header__lang-item">
+                            <a class="header__lang-link" href="#">RU</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__logo--mobile">
+                <a class="header__logo-link" href="#">
+                    <img class="header__logo-img" src="image/Logo/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__nav">
+                <div class="nav">
+                    <div class="nav__burger">
+                        <a class="nav__menu-btn" href="javascript:void(0);">
+                            <span class="nav__menu-btn--hide active" onclick="menuHandlerControl(this);"></span>
+                            <span class="nav__menu-btn--show" onclick="menuHandlerControl(this);"></span>
+                        </a>
+                        <ul class="nav__menu">
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#">ПРОДУКЦІЯ</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#">ДЕ КУПИТИ</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#">ПРО КОМПАНІЮ</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#">ФРАНЧАЙЗИНГ</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#">НОВИНИ</a>
+                            </li>
+                        </ul>
+                        <div class="nav__search-btn">
+                            <ul class="nav__menu">
+                                <li class="nav-menu__item">
+                                    <a class="nav-menu__link" href="#">Представники</a>
+                                </li>
+                                <li class="nav-menu__item">
+                                    <a class="nav-menu__link" href="#">Консультація</a>
+                                </li>
+                            </ul>
+                            <a class="nav__search-btn-i" href="#"
+                               onclick="makeSearch();"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__side-menu">
+                    <div id="mySidenav" class="nav__side-menu-list" data-side-menu="0">
+                        <a href="javascript:void(0)" class="closebtn">&times;</a>
+                        <div class="nav__side-menu-bar-search search-form">
+                            <form class="search-form__form" action="#">
+                                <button class="search-form__btn" type="submit"></button>
+                                <input class="search-form__input" placeholder="Пошук" type="text">
+                            </form>
+                        </div>
+                        <div class="nav__side-menu-nav">
+                            <ul>
+                                <li>
+                                    <a class="nav__side-link parent" href="#">
+                                        <div class="nav__side-menu-ico">
+                                            <img src="image/ico/window.svg" alt="window">
+                                        </div>
+                                        <span>ВІКНА</span>
+                                    </a>
+                                    <div class="nav__side-sub-menu-list">
+                                        <div class="nav__side-menu-1-bar">
+                                            <a class="nav__side-menu-1-bar-link nav__side-sub-menu-control"
+                                               href="javascript:void(0);">Вікна</a>
+                                        </div>
+                                        <div class="nav__menu-items-1">
+                                            <div class="nav__side-menu-1-item">
+                                                <div class="nav__side-menu-1-item-1">
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> Меню 2 LVL</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">Меню 2 LVL</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 1</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 2</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 3</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 4</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 5</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 6</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 7</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 8</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 9</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 10</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 11</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> Меню 2 LVL</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">Меню 2 LVL</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 1</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 2</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 3</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 4</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 5</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 6</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 7</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 8</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 9</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 10</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 11</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> Меню 2 LVL</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">Меню 2 LVL</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 1</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 2</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 3</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 4</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 5</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 6</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 7</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 8</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 9</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 10</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 11</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> Меню 2 LVL</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">Меню 2 LVL</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 1</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 2</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 3</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 4</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 5</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 6</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 7</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 8</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 9</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 10</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 11</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> Меню 2 LVL</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">Меню 2 LVL</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 1</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 2</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 3</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 4</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 5</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 6</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 7</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 8</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 9</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 10</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 11</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> Меню 2 LVL</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">Меню 2 LVL</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 1</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 2</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 3</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 4</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 5</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 6</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 7</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 8</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 9</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 10</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 11</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> Меню 2 LVL</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">Меню 2 LVL</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 1</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 2</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 3</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 4</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 5</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 6</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 7</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 8</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 9</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 10</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 11</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> Меню 2 LVL</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">Меню 2 LVL</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 1</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 2</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 3</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 4</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 5</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 6</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 7</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 8</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 9</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 10</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 11</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> Меню 2 LVL</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">Меню 2 LVL</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 1</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 2</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 3</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 4</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 5</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 6</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 7</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 8</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 9</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 10</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>Меню 3 LVL 11</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> - УХИЛЬНО-РОЗСУВНІ PSK</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">-УХИЛЬНО-РОЗСУВНІ PSK</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>-Ухильно-розсувні PSK</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="nav__side-link parent" href="#">
+                                        <div class="nav__side-menu-ico">
+                                            <img src="image/ico/1.svg" alt="dor">
+                                        </div>
+                                        <span>ДВЕРІ</span>
+                                    </a>
+                                    <div class="nav__side-sub-menu-list">
+                                        <div class="nav__side-menu-1-bar">
+                                            <a class="nav__side-menu-1-bar-link nav__side-sub-menu-control"
+                                               href="javascript:void(0);">Двері</a>
+                                        </div>
+                                        <div class="nav__menu-items-1">
+                                            <div class="nav__side-menu-1-item">
+                                                <div class="nav__side-menu-1-item-1">
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-1-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span>-УХИЛЬНО-РОЗСУВНІ PSK</span>
+                                                    </a>
+                                                    <div class="nav__side-sub-menu-list">
+                                                        <div class="nav__side-menu-2-bar">
+                                                            <a class="nav__side-menu-2-bar-link nav__side-sub-menu-control"
+                                                               href="javascript:void(0);">-УХИЛЬНО-РОЗСУВНІ PSK</a>
+                                                        </div>
+                                                        <div class="nav__menu-items-2">
+                                                            <div class="nav__side-menu-2-list">
+                                                                <div class="nav__side-menu-2-item">
+                                                                    <a class="nav__side-menu-2-link" href="#">
+                                                                        <span>-Ухильно-розсувні PSK</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="nav__side-link" href="#">
+                                        <div class="nav__side-menu-ico">
+                                            <img src="image/ico/2.svg" alt="facade">
+                                        </div>
+                                        <span>ФАСАД/ЗІМОВИЙ САД</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav__side-link" href="#">
+                                        <div class="nav__side-menu-ico">
+                                            <img src="image/ico/3.svg" alt="teras">
+                                        </div>
+                                        <span>ТЕРАСНІ СИСТЕМИ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav__side-link" href="#">
+                                        <div class="nav__side-menu-ico">
+                                            <img src="image/ico/gate.svg" alt="goal">
+                                        </div>
+                                        <span>ВОРОТА/РОЛЕТИ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav__side-link" href="#">
+                                        <div class="nav__side-menu-ico">
+                                            <img src="image/ico/4.svg" alt="smarthome">
+                                        </div>
+                                        <span>SMARTHOME</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav__side-link" href="#">
+                                        <div class="nav__side-menu-ico">
+                                            <img src="image/ico/more.svg" alt="more">
+                                        </div>
+                                        <span>ДОДАТКОВО</span>
+                                    </a>
+                                </li>
+                                <li class="aboutCompany" style="display: none;">
+                                    <div class="nav__side-sub-menu-list">
+                                        <div class="nav__side-menu-1-bar">
+                                            <a class="nav__side-menu-1-bar-link nav__side-sub-menu-control"
+                                               href="javascript:void(0);">Вікна</a>
+                                        </div>
+                                        <div class="nav__menu-items-1">
+                                            <div class="nav__side-menu-1-item">
+                                                <div class="nav__side-menu-1-item-1">
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span> Контакти</span>
+                                                    </a>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span>  Чому ВікнаПлюс?</span>
+                                                    </a>
+                                                    <a class="nav__side-menu-1-link parent" href="#">
+                                                        <div class="nav__side-menu-ico">
+                                                            <img src="image/window/menu-big-ico-3.png" alt="window">
+                                                        </div>
+                                                        <span>  Наші роботи</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<footer>
+    <div class="footer__bottom">
+        <div class="footer__bottom-inner">
+            <div class="footer__bottom-logo">
+                <a class="footer__logo-link">
+                    <img src="image/Logo/logo-white.png" alt="logo">
+                </a>
+            </div>
+            <div class="footer__bottom-txt">
+                <p>Офіційний сайт компанії ТМ «ВікноПлюс»
+                    <br>
+                    © 1997-2020 ВікноПлюс. Всі права захищені, копіювання будь-якої інформації заборонено
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--<div class="popup wtb open">-->
+<!--    <div class="popup__body">-->
+<!--        <div class="popup__inner">-->
+<!--            <div class="popup__close">-->
+<!--                <div class="popup__close-ico"></div>-->
+<!--            </div>-->
+<!--            <div class="popup__content wbt__content">-->
+<!--                <div class="site-title-hr">Мережа продажів</div>-->
+<!--                <div class="wtb__form-wrap">-->
+<!--                    <form class="wtb__form search-form__form" action="#">-->
+<!--                        <button class="search-form__btn" type="submit"></button>-->
+<!--                        <input class="search-form__input" placeholder="Оберіть місто або текст" type="text">-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--                <div class="wtb__btn">-->
+<!--                    <a class="site-btn site-btn&#45;&#45;black wtb__btn-i" href="#">-->
+<!--                        <span>Моє місцезнаходження</span>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="wtb__space">-->
+<!--                    <div class="wtb__space-tabs">-->
+<!--                        <div class="wtb__space-tap">-->
+<!--                            <a class="wtb__space-tab-i active">Україна</a>-->
+<!--                        </div>-->
+<!--                        <div class="wtb__space-tab">-->
+<!--                            <a class="wtb__space-tab-i">Інші країни</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wtb__space-content">-->
+<!--                        <div class="wtb__space-item active">-->
+<!--                            <ul>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                                <li><a href="#">City</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <div class="wtb__space-item">-->
+<!--                            <ul>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                                <li><a href="#">City 2</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="popup advice open">-->
+<!--    <div class="popup__body">-->
+<!--        <div class="popup__inner">-->
+<!--            <div class="popup__close">-->
+<!--                <div class="popup">__close-ico popup__close-ico&#45;&#45;revers</div>-->
+<!--            </div>-->
+<!--            <div class="popup__content wtb__content">-->
+<!--                <div class="request-block__inner">-->
+<!--                    <form class="request-block__form" action="#">-->
+<!--                        <div class="request-block__row">-->
+<!--                            <span class="request-block__title-main">Залишити заявку</span>-->
+<!--                            <span class="request-block__title-text">Залиште заявку і наш менеджер зв'яжеться з вами найблищим часом</span>-->
+<!--                        </div>-->
+<!--                        <div class="request-block__row">-->
+<!--                            <div class="site-input">-->
+<!--                                <input type="text" id="requestFormName3">-->
+<!--                                <label for="requestFormName3"><span>Ім'я</span></label>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="request-block__row">-->
+<!--                            <div class="site-input">-->
+<!--                                <input type="tel" id="requestFormName3">-->
+<!--                                <label for="requestFormName3"><span>Телефон</span></label>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="request-block__row">-->
+<!--                            <div class="site-input">-->
+<!--                                <input type="email" id="requestFormName3">-->
+<!--                                <label for="requestFormName3"><span>Ім'я</span></label>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="request-block__btn">-->
+<!--                            <a class="submit-btn side-btn request-block__btn-i"></a>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<script src="js/main.js"></script>
+</body>
+</html>
